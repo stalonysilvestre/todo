@@ -1,38 +1,158 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+h1{
+  align-items: center;
+  font-size: 35px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  align-items: center;
+  
+}
+
+body {
+  font: 400 14px Bebas Neue, sans-serif;
+  background: #39398d;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+ul {
+  margin: 5;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 14px 8px 11px 50px;
+  background: #eee;
+  font-size: 24px;
+  transition: 0.3s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #e6e6e6;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  background-color: #e6e6e6;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+  text-decoration: #939;
+}
+
+/* Style the header */
+.header {
+  background-color: rgb(113, 89, 193);
+  padding: 30px 50px;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style the input */
+.task {
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  width: 75%;
+  padding: 10px;
+  float: right;
+  font-size: 16px;
+  align-items: stretch;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.check {
+  margin-right: 5px;
+  background-color: #993399;
+}
+
+/* Style the "Add" button */
+.adcionar {
+  
+  padding: 10px;
+  width: 20%;
+  background: #ffffff ;
+  color: rgb(113, 89, 193);
+  border: #00ccff;
+  float: left;
+  margin-left: -10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.addcionar:hover {
+  background-color: #939;
+  color: #993399;
+}
+.x{
+  padding: 10px;
+  width: 20%;
+  color: #f44336;
+  float: left;
+  margin-left: -10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.X:hover{
+  border-color: #f44336;
+  color: #f44336;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: large;
 }
